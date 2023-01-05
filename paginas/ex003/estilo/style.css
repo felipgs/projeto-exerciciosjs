@@ -33,12 +33,23 @@ h1 {
     margin: 20px 0px;
 }
 
+h2 {
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+}
+
 section {
     background-color: var(--cor00);
     margin: auto;
     padding: 20px;
     width: 700px;
     border-radius: 10px;
+}
+
+button {
+    font-size: 1em;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .button {
