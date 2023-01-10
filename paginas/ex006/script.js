@@ -1,7 +1,8 @@
-window.alert("Seja bem vindo(a) ao meu site!")
 let res = window.document.getElementById('res')
 
-function calcular() {
-    let num = prompt("Digite um número:")
-    res.innerText = `O dobro de ${num} é ${num * 2}, e a metade é ${num / 2}!`
+function somar() {
+    let n1 = window.prompt('Digite um número:')
+    let n2 = window.prompt('Digite outro número: ')
+    let soma = Number(n1) + Number(n2)
+    res.innerHTML = `A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>`
 }
