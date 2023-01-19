@@ -81,7 +81,7 @@ ul li a:hover {
 footer {
     color: var(--cor02);
     text-align: center;
-    margin-top: 40px;
+    margin: 20px 0px;
 }
 
 footer a {
