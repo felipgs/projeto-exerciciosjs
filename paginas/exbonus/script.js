@@ -1,11 +1,12 @@
 let btn = document.querySelector('button#botao')
-let newUl = document.getElementById('lista')
-let txt = document.getElementById('tarefa')
+let btn2 = document.querySelector('button#botao2')
+let lista = document.getElementById('lista')
 
 btn.addEventListener('click', () => {
+    let txt = document.getElementById('tarefa')
     let newLi = document.createElement('li')
     newLi.innerHTML = `${txt.value}`
-    newUl.appendChild(newLi)
+    lista.appendChild(newLi)
     txt.value = ''
     txt.focus()
 })
