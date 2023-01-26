@@ -1,18 +1,13 @@
-let res = document.querySelector('div#result')
-let btn = document.querySelector('button#botao')
-btn.addEventListener('click', (mes) => {
-    let estacao = ''
-    mes = window.prompt('Digite o mês em extenso (ex: Janeiro)').toLowerCase()
-    if (mes == 'dezembro' || mes == 'janeiro' || mes == 'fevereiro') {
-        estacao = 'VERÃO'
-    }   else if (mes == 'março' || mes =='abril' || mes == 'maio') {
-        estacao = 'OUTONO'
-    }   else if (mes == 'junho' || mes == 'julho' || mes == 'agosto') {
-        estacao = 'INVERNO'
-    }   else if (mes == 'setembro' || mes == 'outubro' || mes == 'novembro') {
-        estacao = 'PRIMAVERA'
-    }   else {
-        estacao = 'INDEFINIDA'
+let button = document.getElementById('botao')
+let result = document.getElementById('result')
+button.addEventListener('click', contar)
+
+function contar() {
+    result.innerHTML += '<h3>Contando de 1 até 10</h3> <br>'
+    
+    for(let i = 1; i <= 10; i++) {
+        result.innerHTML += `${i}  &#x1F449`
     }
-    res.innerHTML = `<p>No mês de ${mes.toUpperCase()} , estamos no(a) <strong>${estacao}</strong></p>`
-})
+
+    result.innerHTML += '&#x1F3C1'
+}
